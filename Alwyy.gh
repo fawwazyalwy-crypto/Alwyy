@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WELCOME TO CLASS ANANDA ALWY FAWWAZY</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Animasi Background */
+body::before{
+    content:"";
+    position:fixed;
+    width:200%;
+    height:200%;
+    background:
+    radial-gradient(circle,#38bdf8 2px,transparent 2px);
+    background-size:50px 50px;
+    animation: moveBg 15s linear infinite;
+    opacity:0.15;
+}
+
+@keyframes moveBg{
+    from{transform:translate(0,0);}
+    to{transform:translate(-100px,-100px);}
+}
+
+.container{
+    text-align:center;
+    padding:60px 20px;
+    position:relative;
+    z-index:1;
+}
+
+h1{
+    font-size:3rem;
+    color:#38bdf8;
+    text-shadow:0 0 20px #38bdf8;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #38bdf8;
+    }
+    to{
+        text-shadow:0 0 30px #38bdf8,
+                     0 0 50px #38bdf8;
+    }
+}
+
+.subtitle{
+    margin-top:15px;
+    font-size:1.2rem;
+    animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card{
+    max-width:900px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card h2{
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+
+ul{
+    text-align:left;
+    margin-left:25px;
+    line-height:2;
+}
+
+.footer{
+    margin-top:30px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>WELCOME TO CLASS</h1>
+    <h1>ANANDA ALWY FAWWAZY</h1>
+
+    <p class="subtitle">
+        Belajar HTML, CSS, dan Dasar Pengembangan Website
+    </p>
+
+    <div class="card">
+        <h2>📚 Materi yang Dipelajari</h2>
+        <ul>
+            <li>Struktur Dasar HTML</li>
+            <li>Heading dan Paragraf</li>
+            <li>Bold, Italic, dan Underline</li>
+            <li>Menampilkan Gambar</li>
+            <li>Membuat Link</li>
+            <li>Bullet Point dan Number List</li>
+            <li>Membuat Tabel</li>
+            <li>Membuat Formulir</li>
+            <li>CSS untuk Desain Website</li>
+            <li>Animasi Website Modern</li>
+        </ul>
+
+        <a href="#" class="btn">Mulai Belajar</a>
+    </div>
+
+    <div class="footer">
+        © 2026 - Class Ananda Alwy Fawwazy
+    </div>
+</div>
+
+</body>
+</html>
